@@ -80,7 +80,6 @@
                     Clicked="OnEqualsClicked" />
         </HorizontalStackLayout>
 
-        <!-- Sonuç -->
         <Label x:Name="ResultLabel"
                Text="Sonuç burada gösterilecek"
                FontSize="24"
