@@ -1,2 +1,2 @@
-# MiniCalculator
+# CompleteCalculator
 MiniCalculator homework 2 
