@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiniCalculator.MainPage"
+             Title="Mini Calculator"
+             BackgroundColor="Pink">
+
+    <VerticalStackLayout Padding="30" Spacing="15">
+
+
+        <Entry x:Name="NumberEntry"
+               Placeholder="Bir sayı girin"
+               Keyboard="Numeric"
+               FontSize="20"
+               BackgroundColor="White" />
+
+      
+        <HorizontalStackLayout Spacing="10">
+            <Button Text="CE"
+                    BackgroundColor="Purple"
+                    TextColor="White"
+                    Clicked="OnClearEntryClicked" />
+
+            <Button Text="C"
+                    BackgroundColor="Purple"
+                    TextColor="White"
+                    Clicked="OnClearAllClicked" />
+        </HorizontalStackLayout>
+
+       
+        <HorizontalStackLayout Spacing="10">
+            <Button Text="+"
+                    BackgroundColor="Purple"
+                    TextColor="White"
+                    Clicked="OnAddClicked" />
+
+            <Button Text="-"
+                    BackgroundColor="Purple"
+                    TextColor="White"
+                    Clicked="OnSubtractClicked" />
+
+            <Button Text="×"
+                    BackgroundColor="Purple"
+                    TextColor="White"
+                    Clicked="OnMultiplyClicked" />
+
+            <Button Text="÷"
+                    BackgroundColor="Purple"
+                    TextColor="White"
+                    Clicked="OnDivideClicked" />
+        </HorizontalStackLayout>
+
+        
+        <HorizontalStackLayout Spacing="10">
+            <Button Text="x²"
+                    BackgroundColor="Purple"
+                    TextColor="White"
+                    Clicked="OnSquareClicked" />
+
+            <Button Text="√x"
+                    BackgroundColor="Purple"
+                    TextColor="White"
+                    Clicked="OnSqrtClicked" />
+        </HorizontalStackLayout>
+
+       
+        <HorizontalStackLayout Spacing="10">
+            <Button Text="."
+                    BackgroundColor="Purple"
+                    TextColor="White"
+                    WidthRequest="80"
+                    Clicked="OnDecimalClicked" />
+
+            <Button Text="="
+                    BackgroundColor="Purple"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="20"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="OnEqualsClicked" />
+        </HorizontalStackLayout>
+
+        <!-- Sonuç -->
+        <Label x:Name="ResultLabel"
+               Text="Sonuç burada gösterilecek"
+               FontSize="24"
+               TextColor="DarkGreen"
+               HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>
